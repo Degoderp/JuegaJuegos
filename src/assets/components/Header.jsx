@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom"
+
 function Header() {
   return (
     <div className="container-fluid px-5 py-4">
   <div className="row gx-0 align-items-center">
     <div className="col-lg-3 text-center text-lg-start">
-      <a href="index.html" className="navbar-brand p-0">
+      <Link className="navbar-brand p-0" to="/">
         <h1 className="display-5 text-primary m-0"><i className="fas fa-shopping-bag text-secondary me-2" />JuegaJuegos</h1>
-      </a>
+      </Link>
     </div>
     <div className="col-lg-6 text-center">
       <div className="position-relative">
@@ -32,5 +34,4 @@ function Header() {
 </div>
   )
 }
-
 export default Header

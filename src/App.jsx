@@ -5,15 +5,21 @@ import Home from './pages/home'
 import About from './pages/About'
 import Footer from './assets/components/Footer'
 import TopBar from './assets/components/Topbar'
+import NavBar from './assets/components/NavBar'
+import './css/style.css';
+import './css/bootstrap.min.css';
+import Shop from './pages/Shop'
+
 
 function App() {
   return (
     <>
       <TopBar/>
       <Header/>
+      <NavBar/>
       <Routes>
         <Route path='/' element = {<Home/>}/>
-        <Route path='/About' element = {<About/>}/>
+        <Route path='/Tienda' element = {<Shop/>}/>
       </Routes>
       <Footer/>
     </>
