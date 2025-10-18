@@ -1,4 +1,8 @@
-<div className="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+import React from 'react'
+
+function Footer() {
+  return (
+    <div className="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
   <div className="container py-5">
     <div className="row g-4 rounded mb-5" style={{background: 'rgba(255, 255, 255, .03)'}}>
       <div className="col-md-6 col-lg-6 col-xl-3">
@@ -86,3 +90,7 @@
     </div>
   </div>
 </div>
+  )
+}
+
+export default Footer

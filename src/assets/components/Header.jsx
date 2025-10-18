@@ -1,4 +1,8 @@
-<div className="container-fluid px-5 py-4">
+import React from 'react'
+
+function Header() {
+  return (
+    <div className="container-fluid px-5 py-4">
   <div className="row gx-0 align-items-center">
     <div className="col-lg-3 text-center text-lg-start">
       <a href="index.html" className="navbar-brand p-0">
@@ -28,3 +32,7 @@
     </div>
   </div>
 </div>
+  )
+}
+
+export default Header
