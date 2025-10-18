@@ -4,10 +4,12 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/home'
 import About from './pages/About'
 import Footer from './assets/components/Footer'
+import TopBar from './assets/components/Topbar'
 
 function App() {
   return (
     <>
+      <TopBar/>
       <Header/>
       <Routes>
         <Route path='/' element = {<Home/>}/>

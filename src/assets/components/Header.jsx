@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Header() {
   return (
     <div className="container-fluid px-5 py-4">

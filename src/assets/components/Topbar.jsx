@@ -1,4 +1,6 @@
-<div className="container-fluid bg-light px-5 d-none d-lg-block">
+function TopBar() {
+    return(
+        <div className="container-fluid bg-light px-5 d-none d-lg-block">
   <div className="row gx-0 align-items-center" style={{height: 45}}>
     <div className="col-lg-4 text-center text-lg-start">
       <div className="d-inline-flex align-items-center">
@@ -22,3 +24,7 @@
     </div>
   </div>
 </div>
+    )
+}
+
+export default TopBar
