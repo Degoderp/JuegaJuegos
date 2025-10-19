@@ -1,4 +1,4 @@
-function Shop () {
+function Tienda () {
     return(
 <div>
   {/* Products Offer Start */}
@@ -251,4 +251,4 @@ function Shop () {
     )
 }
 
-export default Shop
+export default Tienda

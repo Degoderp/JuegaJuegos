@@ -12,9 +12,9 @@ function NavBar () {
         <div className="navbar-nav mx-auto">
           <Link className = "nav-item nav-link" to = '/'>Inicio</Link>
           <Link className= "nav-item nav-link" to = '/Tienda'>Tienda</Link>
-          <a className="nav-item nav-link">Carrito</a>
-          <a className="nav-item nav-link">Contacto</a>
-          <a className="nav-item nav-link">datos de compra</a>
+          <Link className="nav-item nav-link" to = "/Carrito">Carrito</Link>
+          <Link className="nav-item nav-link" to = "/Contacto">Contacto</Link>
+          <Link className="nav-item nav-link" to="/Datos de compra"> Datos de compra</Link>
         </div>
       </div>
     </nav>

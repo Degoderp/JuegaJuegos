@@ -1,4 +1,4 @@
-function Home() {
+function Inicio() {
   return (
 <div>
   <div className="container-fluid carousel bg-light px-0">
@@ -395,4 +395,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Inicio
