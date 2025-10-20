@@ -12,6 +12,8 @@ import Inicio from './pages/inicio'
 import Tienda from './pages/tienda'
 import Carrito from './pages/carrito'
 import Contacto from './pages/Contacto'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {

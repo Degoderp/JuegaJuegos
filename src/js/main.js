@@ -1,3 +1,10 @@
+
+import $ from 'jquery';
+import { WOW } from 'wowjs';
+
+
+
+
 (function ($) {
     "use strict";
 
@@ -11,6 +18,7 @@
     };
     spinner(0);
     
+
     
     // inicializa el wowjs
     new WOW().init();
@@ -169,7 +177,7 @@
         return false;
     });
 
-})(jQuery);
+   })( $ );
 
 // Se asegura de que el script se ejecute solo después de que toda la página se haya cargado.
 document.addEventListener('DOMContentLoaded', () => {
