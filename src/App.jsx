@@ -9,6 +9,9 @@ import NavBar from './assets/components/NavBar'
 import './css/style.css';
 import './css/bootstrap.min.css';
 import Shop from './pages/Shop'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 
 function App() {

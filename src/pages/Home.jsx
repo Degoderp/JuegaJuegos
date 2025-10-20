@@ -1,67 +1,168 @@
+import React from "react";
+import Slider from "react-slick";
+
 function Home() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: false,
+  };
+
   return (
-<div>
-  <div className="container-fluid carousel bg-light px-0">
-    <div className="row g-0 justify-content-end">
-      <div className="col-12 col-lg-7 col-xl-9">
-        <div className="header-carousel owl-carousel bg-light py-5">
-          {/* PRODUCTO 1: Minecraft */}
-          <div className="row g-0 header-carousel-item align-items-center">
-            <div className="col-xl-6 carousel-img wow fadeInLeft" data-wow-delay="0.1s">
-              <img src="https://img.redbull.com/images/c_crop,x_1015,y_0,h_1320,w_990/c_fill,w_450,h_600/q_auto,f_auto/redbullcom/2025/8/11/dcusojkfgapu4zxe3gtb/minecraft-landscape" className="img-fluid w-100" alt="Minecraft" />
-            </div>
-            <div className="col-xl-6 carousel-content p-4">
-              <h4 className="text-uppercase fw-bold mb-4 wow fadeInRight" data-wow-delay="0.1s" style={{letterSpacing: 3}}>Es tuyo solo por 20.000 clp</h4>
-              <h1 className="display-3 text-capitalize mb-4 wow fadeInRight" data-wow-delay="0.3s">TODOS LOS MINECRAFT</h1>
-              <p className="text-dark wow fadeInRight" data-wow-delay="0.5s">Terminos y condiciones</p>
-              {/* BOTÓN CORREGIDO PARA MINECRAFT */}
-              <a className="btn btn-primary rounded-pill py-3 px-5 wow fadeInRight add-to-cart-btn" data-wow-delay="0.7s" href="#" data-id="minecraft-bundle" data-name="Todos los Minecraft" data-price={20000} data-image="https://img.redbull.com/images/c_crop,x_1015,y_0,h_1320,w_990/c_fill,w_450,h_600/q_auto,f_auto/redbullcom/2025/8/11/dcusojkfgapu4zxe3gtb/minecraft-landscape">
-                Compra ahora
-              </a>
+    <div>
+      {/* Carousel Start */}
+      <div className="container-fluid carousel bg-light px-0">
+        <div className="row g-0 justify-content-end">
+          <div className="col-12 col-lg-7 col-xl-9">
+            <div className="header-carousel bg-light py-5">
+              <Slider {...settings}>
+                {/* PRODUCTO 1: Minecraft */}
+                <div className="row g-0 header-carousel-item align-items-center">
+                  <div
+                    className="col-xl-6 carousel-img wow fadeInLeft"
+                    data-wow-delay="0.1s"
+                  >
+                    <img
+                      src="https://img.redbull.com/images/c_crop,x_1015,y_0,h_1320,w_990/c_fill,w_450,h_600/q_auto,f_auto/redbullcom/2025/8/11/dcusojkfgapu4zxe3gtb/minecraft-landscape"
+                      className="img-fluid w-100"
+                      alt="Minecraft"
+                    />
+                  </div>
+                  <div className="col-xl-6 carousel-content p-4">
+                    <h4
+                      className="text-uppercase fw-bold mb-4 wow fadeInRight"
+                      data-wow-delay="0.1s"
+                      style={{ letterSpacing: 3 }}
+                    >
+                      Es tuyo solo por 20.000 clp
+                    </h4>
+                    <h1
+                      className="display-3 text-capitalize mb-4 wow fadeInRight"
+                      data-wow-delay="0.3s"
+                    >
+                      TODOS LOS MINECRAFT
+                    </h1>
+                    <p
+                      className="text-dark wow fadeInRight"
+                      data-wow-delay="0.5s"
+                    >
+                      Terminos y condiciones
+                    </p>
+                    <a
+                      className="btn btn-primary rounded-pill py-3 px-5 wow fadeInRight add-to-cart-btn"
+                      data-wow-delay="0.7s"
+                      href="#"
+                      data-id="minecraft-bundle"
+                      data-name="Todos los Minecraft"
+                      data-price={20000}
+                      data-image="https://img.redbull.com/images/c_crop,x_1015,y_0,h_1320,w_990/c_fill,w_450,h_600/q_auto,f_auto/redbullcom/2025/8/11/dcusojkfgapu4zxe3gtb/minecraft-landscape"
+                    >
+                      Compra ahora
+                    </a>
+                  </div>
+                </div>
+
+                {/* PRODUCTO 2: Call of Duty WW2 */}
+                <div className="row g-0 header-carousel-item align-items-center">
+                  <div
+                    className="col-xl-6 carousel-img wow fadeInLeft"
+                    data-wow-delay="0.1s"
+                  >
+                    <img
+                      src="https://m.media-amazon.com/images/M/MV5BMTUyNDY4NDY5MF5BMl5BanBnXkFtZTgwMjg3NDQwNDI@._V1_.jpg"
+                      className="img-fluid w-100"
+                      alt="Call of Duty WW2"
+                    />
+                  </div>
+                  <div className="col-xl-6 carousel-content p-4">
+                    <h4
+                      className="text-uppercase fw-bold mb-4 wow fadeInRight"
+                      data-wow-delay="0.1s"
+                      style={{ letterSpacing: 3 }}
+                    >
+                      Es tuyo solo por 23.900 clp
+                    </h4>
+                    <h1
+                      className="display-3 text-capitalize mb-4 wow fadeInRight"
+                      data-wow-delay="0.3s"
+                    >
+                      CALL OF DUTY WW2
+                    </h1>
+                    <p
+                      className="text-dark wow fadeInRight"
+                      data-wow-delay="0.5s"
+                    >
+                      Terminos y condiciones
+                    </p>
+                    <a
+                      className="btn btn-primary rounded-pill py-3 px-5 wow fadeInRight add-to-cart-btn"
+                      data-wow-delay="0.7s"
+                      href="#"
+                      data-id="cod-ww2"
+                      data-name="Call of Duty: WW2"
+                      data-price={23900}
+                      data-image="https://m.media-amazon.com/images/M/MV5BMTUyNDY4NDY5MF5BMl5BanBnXkFtZTgwMjg3NDQwNDI@._V1_.jpg"
+                    >
+                      Compra ahora
+                    </a>
+                  </div>
+                </div>
+              </Slider>
             </div>
           </div>
-          {/* PRODUCTO 2: Call of Duty WW2 */}
-          <div className="row g-0 header-carousel-item align-items-center">
-            <div className="col-xl-6 carousel-img wow fadeInLeft" data-wow-delay="0.1s">
-              <img src="https://m.media-amazon.com/images/M/MV5BMTUyNDY4NDY5MF5BMl5BanBnXkFtZTgwMjg3NDQwNDI@._V1_.jpg" className="img-fluid w-100" alt="Call of Duty WW2" />
-            </div>
-            <div className="col-xl-6 carousel-content p-4">
-              <h4 className="text-uppercase fw-bold mb-4 wow fadeInRight" data-wow-delay="0.1s" style={{letterSpacing: 3}}>Es tuyo solo por 23.900 clp</h4>
-              <h1 className="display-3 text-capitalize mb-4 wow fadeInRight" data-wow-delay="0.3s">CALL OF DUTY WW2</h1>
-              <p className="text-dark wow fadeInRight" data-wow-delay="0.5s">Terminos y condiciones</p>
-              {/* BOTÓN CORREGIDO PARA CALL OF DUTY */}
-              <a className="btn btn-primary rounded-pill py-3 px-5 wow fadeInRight add-to-cart-btn" data-wow-delay="0.7s" href="#" data-id="cod-ww2" data-name="Call of Duty: WW2" data-price={23900} data-image="https://m.media-amazon.com/images/M/MV5BMTUyNDY4NDY5MF5BMl5BanBnXkFtZTgwMjg3NDQwNDI@._V1_.jpg">
-                Compra ahora
-              </a>
+
+          {/* PRODUCTO 3: GTA V (Banner Lateral) */}
+          <div
+            className="col-12 col-lg-5 col-xl-3 wow fadeInRight"
+            data-wow-delay="0.1s"
+          >
+            <div className="carousel-header-banner h-100">
+              <img
+                src="https://thegamekeys.in/wp-content/uploads/2023/08/71uizbdZ5dL.jpg"
+                className="img-fluid w-100 h-100"
+                style={{ objectFit: "cover" }}
+                alt="GTA V"
+              />
+              <div className="carousel-banner-offer">
+                <p className="bg-primary text-white rounded fs-5 py-2 px-4 mb-0 me-3">
+                  ahorra 21.900
+                </p>
+                <p className="text-primary fs-5 fw-bold mb-0">
+                  oferta especial
+                </p>
+              </div>
+              <div className="carousel-banner">
+                <div className="carousel-banner-content text-center p-4">
+                  <a href="#" className="d-block mb-2">
+                    GTA V
+                  </a>
+                  <a href="#" className="d-block text-white fs-3">
+                    VERSIÓN ELITE <br /> ONLINE PREMIUM
+                  </a>
+                  <del className="me-2 text-white fs-5">43.900</del>
+                  <span className="text-primary fs-5">$21.000</span>
+                </div>
+                <a
+                  href="#"
+                  className="btn btn-primary rounded-pill py-2 px-4 add-to-cart-btn"
+                  data-id="gta5-elite"
+                  data-name="GTA V: Elite Online Premium"
+                  data-price={21000}
+                  data-image="https://thegamekeys.in/wp-content/uploads/2023/08/71uizbdZ5dL.jpg"
+                >
+                  <i className="fas fa-shopping-cart me-2" /> añadir a carrito
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      {/* PRODUCTO 3: GTA V (Banner Lateral) */}
-      <div className="col-12 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay="0.1s">
-        <div className="carousel-header-banner h-100">
-          <img src="https://thegamekeys.in/wp-content/uploads/2023/08/71uizbdZ5dL.jpg" className="img-fluid w-100 h-100" style={{objectFit: 'cover'}} alt="GTA V" />
-          <div className="carousel-banner-offer">
-            <p className="bg-primary text-white rounded fs-5 py-2 px-4 mb-0 me-3">ahorra 21.900</p>
-            <p className="text-primary fs-5 fw-bold mb-0">oferta especial</p>
-          </div>
-          <div className="carousel-banner">
-            <div className="carousel-banner-content text-center p-4">
-              <a href="#" className="d-block mb-2">GTA V</a>
-              <a href="#" className="d-block text-white fs-3">VERSIÓN ELITE <br /> ONLINE PREMIUM</a>
-              <del className="me-2 text-white fs-5">43.900</del>
-              <span className="text-primary fs-5">$21.000</span>
-            </div>
-            {/* BOTÓN CORREGIDO PARA GTA V */}
-            <a href="#" className="btn btn-primary rounded-pill py-2 px-4 add-to-cart-btn" data-id="gta5-elite" data-name="GTA V: Elite Online Premium" data-price={21000} data-image="https://thegamekeys.in/wp-content/uploads/2023/08/71uizbdZ5dL.jpg">
-              <i className="fas fa-shopping-cart me-2" /> añadir a carrito
-            </a> 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* Carousel End */}
+      {/* Carousel End */}
   {/* Searvices Start */}
   <div className="container-fluid px-0">
     <div className="row g-0">
